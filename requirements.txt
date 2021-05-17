@@ -6,3 +6,4 @@ phonenumbers==8.12.16
 Pillow==8.1.2
 pytz==2020.5
 sqlparse==0.4.1
+typing-extensions==3.7.4.3
