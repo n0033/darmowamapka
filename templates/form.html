@@ -1,0 +1,28 @@
+<form method="POST" action="">
+    {% csrf_token %}
+    <p><label for="firstname">{{ form_title_1.text }}</label></p>
+    <p><input type="text" id="firstname" name="firstname" maxlength="20" required></p>
+
+    <p><label for="lastname">{{ form_title_2.text }}</label></p>
+    <p><input type="text" id="lastname" name="lastname" maxlength="30" required></p>
+
+    <p><label for="email">{{ form_title_3.text }}</label></p>
+    <p><input type="email" id="email" name="email" maxlength="320" required></p>
+
+    <p><label for="phone_number">{{ form_title_4.text }}</label></p>
+    <p class="phone-label">{{ form_subtitle_4.text }}</p>
+    <p><input type="text" id="phone_number" name="phone_number"></p>
+
+    <div class="row justify-content-center">
+        <div class="col-10 col-md-4 col-lg-4 col-xl-4">
+
+            <label for="checkbox" style="word-wrap:break-word; font-size: 0.8em;"><input type="checkbox" id="checkbox"
+                                                                                         name="checkbox" required>
+                {{ checkbox_label.text }}</label>
+        </div>
+    </div>
+    <p class="pt-3">
+        <button class="button-thin-border" type="submit"> {{ submit_button.text }}</button>
+    </p>
+
+</form>

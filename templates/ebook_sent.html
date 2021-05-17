@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block page_title %}
+    <title>{{ ebook_sent_card_title.text }}</title>
+{% endblock page_title %}
+{% block content %}
+    <div class="row justify-content-center h-25 align-items-end">
+        <h2>{{ ebook_sent_title.text }}</h2>
+    </div>
+    <div class="row justify-content-center pt-2">
+        <h3>{{ ebook_sent_1.text }}</h3>
+    </div>
+    <div class="row justify-content-center h-25 align-items-center">
+        <a href="{% url 'main:main' %}">
+            <button class="button-thin-border">{{ ebook_sent_button.text }}</button>
+        </a>
+    </div>
+{% endblock content %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block page_title %}
+    <title>{{ main_page_card_title.text }}</title>
+{% endblock page_title %}
+{% block content %}
+    <div class="row justify-content-center pt-4">
+        <h3>{{ title.text }}</h3>
+    </div>
+    <div class="row justify-content-end align-items-center" style="height: 60%;" align="center">
+        <div class="col">
+            {% include 'form.html' %}
+        </div>
+    </div>
+
+    {% if messages %}
+        <div class="row justify-content-center message pb-5">
+            {% for message in messages %}
+                {{ message }}
+            {% endfor %}
+        </div>
+    {% endif %}
+
+{% endblock content %}

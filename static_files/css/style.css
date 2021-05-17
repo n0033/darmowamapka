@@ -1,0 +1,128 @@
+body {
+    height: 100%;
+    min-height: 100%;
+    position: relative;
+    font-family: CutiveMono, monospace;
+    overflow-x: hidden;
+    background-image: url("../../static/media/background.jpg");
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+
+form > p {
+    margin: 0;
+}
+
+a, a:hover {
+    color: black;
+}
+
+.phone-label {
+    font-size: 80%;
+    position: relative;
+    bottom: 1em;
+}
+
+
+.no-arrow {
+    -moz-appearance: textfield;
+}
+
+.no-arrow::-webkit-inner-spin-button {
+    display: none;
+}
+
+.no-arrow::-webkit-outer-spin-button,
+.no-arrow::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* Custom default button */
+.button-thin-border, input[type=text], input[type=password], input[type=email], input[type=number] {
+    display: inline-block;
+    padding: 0.2em 1em;
+    border: 0.1em solid #000000;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-shadow: 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: transparent;
+    position: relative;
+    bottom: 5px;
+}
+
+.button-thin-border:hover, input[type=submit]:hover, .button-thin-border:focus {
+    color: #757d85;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* end of Custom default button */
+
+
+.container {
+    position: relative;
+}
+
+/* footer */
+.footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /*position: absolute;*/
+}
+
+/* end of footer */
+
+[type="checkbox"] {
+    vertical-align: middle;
+}
+
+.yt-player {
+    width: 640px;
+    height: 360px;
+}
+
+@font-face {
+    font-family: 'CutiveMono';
+    src: url("../fonts/CutiveMono-Regular.ttf");
+}
+
+@media screen and (max-width: 800px) {
+
+    h2 {
+        font-size: 190%;
+    }
+
+    h3 {
+        font-size: 150%;
+    }
+
+    .yt-player {
+        width: 320px;
+        height: 180px;
+    }
+
+}
+
+@font-face {
+    font-family: palanquin;
+    src: url("../fonts/palanquin-regular.ttf");
+}
+
+@font-face {
+    font-family: 'CutiveMono';
+    src: url("../fonts/CutiveMono-Regular.ttf");
+}

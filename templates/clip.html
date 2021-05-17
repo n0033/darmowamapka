@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block page_title %}
+    <title>{{ clip_page_card_title.text }}</title>
+{% endblock page_title %}
+{% block content %}
+    <div class="row justify-content-center pt-4">
+        <h3>{{ clip_page_title.text }}</h3>
+    </div>
+    <div class="row justify-content-center pt-5">
+        <iframe title="yt-player" id="youtube_clip" class="yt-player" type="text/html"
+                src="https://www.youtube.com/embed/{{ video_url.text }}?enablejsapi=1&controls=0"
+                frameborder="0"></iframe>
+    </div>
+    <script src="{% static 'js/ytplayer.js' %}"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+{% endblock content %}
+
+
