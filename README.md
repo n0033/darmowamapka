@@ -15,7 +15,7 @@ We will skip creating new project and forking this one.
 
 * installing required packages
   After pasting project files into your new django project you should have file 'requirements.txt' which contains names and versions of required packages.
-  To install it, in your terminal:
+  To install it, in your terminal:  
   `pip install -r requirements.txt`
 
 * modifying settings.py
@@ -50,8 +50,8 @@ We will skip creating new project and forking this one.
   MEDIA_DIR = ''
   ```
 * makemigrations & migrate
-  - in your terminal, in project's root directory:
-  `python manage.py makemigrations`
-  `python manage.py migrate`
-  Now you can run the server
+  - in your terminal, in project's root directory:  
+  `python manage.py makemigrations`  
+  `python manage.py migrate`  
+  Now you can run the server  
   `python manage.py runserver`
