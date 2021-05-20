@@ -49,4 +49,9 @@ We will skip creating new project and forking this one.
   MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
   MEDIA_DIR = ''
   ```
-  
+* makemigrations & migrate
+  - in your terminal, in project's root directory:
+  `python manage.py makemigrations`
+  `python manage.py migrate`
+  Now you can run the server
+  `python manage.py runserver`
