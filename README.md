@@ -29,24 +29,24 @@ We will skip creating new project and forking this one.
   ]
   ```
   - then, you have to initiate these variables with email host information to get the email sending working
-   ```
-   EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-   EMAIL_HOST = <email host>
-   EMAIL_HOST_USER = <email address>
-   EMAIL_HOST_PASSWORD = <password>
-   EMAIL_PORT = <email_port>
-   EMAIL_USE_SSL = <True/False/
-   DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
-   ```
+  ```
+  EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+  EMAIL_HOST = <email host>
+  EMAIL_HOST_USER = <email address>
+  EMAIL_HOST_PASSWORD = <password>
+  EMAIL_PORT = <email_port>
+  EMAIL_USE_SSL = <True/False/
+  DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+  ```
   - lastly, specify static and media files directories. For this project it will be:
-    ```
-    STATIC_URL = '/static/'
-    STATICFILES_DIRS = [
-        os.path.join(BASE_DIR, 'static'),
-    ]
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
-    MEDIA_URL = '/media/'
-    MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
-    MEDIA_DIR = ''
-    ```
+  ```
+  STATIC_URL = '/static/'
+  STATICFILES_DIRS = [
+      os.path.join(BASE_DIR, 'static'),
+  ]
+  STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
+  MEDIA_URL = '/media/'
+  MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+  MEDIA_DIR = ''
+  ```
   
