@@ -1,5 +1,5 @@
-# darmowamapka
-darmowamapka is a landing webpage written in Django with JavaScript.
+# Landing webpage
+Written in Python, Django with JavaScript.
 It sends learning materials to the user after watching and embeded youtube video.
 Available under https://darmowamapka.pl url.
 
